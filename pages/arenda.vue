@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h1><b>Аренда строительных лесов</b></h1>
-					<p>У нас вы можете не только <a href="/index.php">купить строительные леса</a>, но и взять
+					<p>У нас вы можете не только <a href="/">купить строительные леса</a>, но и взять
 						вспомогательные подмости во
 						временное пользование на любой удобный вам срок! Во-первых, данная услуга выгодна при
 						непродолжительной эксплуатации оборудования, так как в итоге затрачивается меньшая сумма.
@@ -18,12 +18,12 @@
 						после завершения срока аренды – забирают их обратно.</p>
 					<p>Наша организация предлагает прокат оборудования четырех основных видов, которые пользуются
 						наибольшим спросом на отечественном рынке. Это сборно-разборные <a
-							href="/ramnye-lesa.php">рамные леса</a> (являются самыми
+							href="/ramnye-lesa">рамные леса</a> (являются самыми
 						распространенными в России за счет надежной конструкции и дешевизны), <a
-							href="/klinovye-lesa.php">клиновые леса</a> (они же –
+							href="/klinovye-lesa">клиновые леса</a> (они же –
 						фланцевые подмости, универсальный замок которых позволяет подстраивать каркас под любые
-						объекты), <a href="/shtyrevye-lesa.php">штыревые леса</a> (самый тяжелый, легко собирающийся и
-						устойчивый вид) и <a href="/homutovye-lesa.php">хомутовые леса</a> (у
+						объекты), <a href="/shtyrevye-lesa">штыревые леса</a> (самый тяжелый, легко собирающийся и
+						устойчивый вид) и <a href="/homutovye-lesa">хомутовые леса</a> (у
 						которых отсутствуют приваренные к стойкам замки). Важно заметить, что абсолютно все строительные
 						леса из металла, предоставляемые нами в аренду, соответствуют требованиям по качеству,
 						эксплуатационной безопасности и эффективности.</p>
@@ -33,16 +33,16 @@
 				<div class="row">
 					<h2 class="text-center"><b>Аренда рамных лесов</b></h2>
 					<div class="col-md-4 col-xs-12">
-						<img class='b-lazy' data-src="/img/arenda/u21.jpg" src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='>
+						<img class='b-lazy' src="~/assets/img/arenda/u21.jpg">
 					</div>
 					<div class="col-md-4 col-xs-12">
-						<img class='b-lazy' data-src="/img/arenda/u11.jpg" src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='>
+						<img class='b-lazy' src="~/assets/img/arenda/u11.jpg">
 					</div>
 					<div class="col-md-4 col-xs-12">
-						<img class='b-lazy' data-src="/img/arenda/u26.jpg" src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='>
+						<img class='b-lazy' src="~/assets/img/arenda/u26.jpg">
 					</div>
 					<div class="col-xs-12">
-						<div class='h5'>У нас вы можете <a href="/arenda-ramnyh-lesov.php">взять в аренду рамные строительные
+						<div class='h5'>У нас вы можете <a href="/arenda-ramnyh-lesov">взять в аренду рамные строительные
 								леса</a> на срок от 30 дней с возможностью последующего выкупа на выгодных условиях.</div>
 					</div>
 					<!-- <div class="col-xs-12">
@@ -54,7 +54,7 @@
 					</div> -->
 				</div>
 
-				<h3 class="text-center"><a href="/arenda-ramnyh-lesov.php"><b>Стоимость аренды рамных лесов</b></a> <br> (выберите марку лесов)</h3>
+				<h3 class="text-center"><a href="/arenda-ramnyh-lesov"><b>Стоимость аренды рамных лесов</b></a> <br> (выберите марку лесов)</h3>
 				
 				<!-- Рамные леса -->
 				<!-- Рамные леса -->
@@ -4328,22 +4328,22 @@
 				<div class="row">
 					<h2 class="text-center"><b>Аренда клиновых лесов</b></h2>
 					<div class="col-md-4 col-xs-12">
-						<img class='b-lazy' data-src="/img/arenda/u34.jpg" src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='>
+						<img class='b-lazy' src="~/assets/img/arenda/u34.jpg">
 					</div>
 					<div class="col-md-4 col-xs-12">
-						<img class='b-lazy' data-src="/img/arenda/u37.jpg" src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='>
+						<img class='b-lazy' src="~/assets/img/arenda/u37.jpg">
 					</div>
 					<div class="col-md-4 col-xs-12">
-						<img class='b-lazy' data-src="/img/arenda/u38.jpg" src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='>
+						<img class='b-lazy' src="~/assets/img/arenda/u38.jpg">
 					</div>
 					<div class="col-xs-12">
-						<div class='h5'>Рекомендуем <a href="/arenda-klinovyh-lesov.php">арендовать клиновые леса</a> для
+						<div class='h5'>Рекомендуем <a href="/arenda-klinovyh-lesov">арендовать клиновые леса</a> для
 							нестандартных объектов и сложных работ, так как их универсальная конструкция легко
 							подстраивается под большинство зданий и сооружений</div>
 					</div>
 				</div>
 
-				<h3 class="text-center"><a href="/arenda-klinovyh-lesov.php"><b>Стоимость аренды клиновых лесов</b></a> <br> (выберите марку лесов)</h3>
+				<h3 class="text-center"><a href="/arenda-klinovyh-lesov"><b>Стоимость аренды клиновых лесов</b></a> <br> (выберите марку лесов)</h3>
 
 				<!-- Клиновые леса -->
 				<!-- Клиновые леса -->
