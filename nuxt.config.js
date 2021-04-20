@@ -15,11 +15,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      { hid: 'stripe', src: '/core2.js', defer: false }
-    ]
+   // script: [
+   //   { hid: 'stripe', src: '/core2.js', defer: false }
+   //]
   },
-
+  loading: '~/components/LoadingBar.vue',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/bootstrap.css',
@@ -35,9 +35,9 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: ["@nuxt/components"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
