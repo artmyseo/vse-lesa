@@ -2279,7 +2279,7 @@ ol.listElemsTab li span.active {
 	padding: 10px;
 }
 
-.prices-block .tableInner {
+.prices-block .tableInner, #tura-section .vue-tabpanel {
 	width: 100%;
 	border-radius: 10px;
 	border: 2px solid #479444;
@@ -3902,14 +3902,18 @@ ol.listElemsTab li span.active {
 	border-bottom: 0;
 	background: #fff;
 	font-weight: 600;
-	padding: 8px;
+	padding: 8px 10px 9px 10px;
 	margin: 0 -2px;
 	cursor: pointer;
 	color: #555;
 }
 
+.prices-tabs ul{
+	margin-bottom: 0;
+}
+
 .prices-tabs li:hover,
-.prices-tabs li.active {
+.prices-tabs li[aria-selected="true"] {
 	background: #479444;
 	color: #fff;
 	font-weight: 600;
@@ -4581,10 +4585,10 @@ p{font-size:15px}
 .rama-section.shtir-section .product-title{background:url("../img/footer_lodyas_green.png") repeat}
 .rama-section .containerDesc{position:relative;float:left;width:100%;padding:110px 0 40px 0;background:rgba(226,226,226,0.29);border-bottom:1px solid rgba(196,196,196,0.3)}
 .rama-section .containerDesc .nav-stacked li{position:relative}
-.rama-section .containerDesc .nav-stacked li a{position:relative;color:#7d7d7d;font-family:"Raleway";font-size:15px;padding-left:35px}
-.rama-section .containerDesc .nav-stacked li a::before{position:absolute;top:4px;left:5px;font-family: "Font Awesome 5 Free";font-weight: 900;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:22px;color:#7d7d7d;outline:none !important}
-.rama-section .containerDesc .nav-stacked li a.desc::before{content:"\f15c"}.rama-section .containerDesc .nav-stacked li a.video::before{content:"\f03d"}
-.rama-section .containerDesc .nav-stacked li.active a{background:#7a7a7a;color:#fff}.rama-section .containerDesc .nav-stacked li.active a::before{color:#fff}
+.rama-section .containerDesc .nav-stacked li{position:relative;color:#7d7d7d;font-family:"Raleway";font-size:15px;padding-left:35px}
+.rama-section .containerDesc .nav-stacked li::before{position:absolute;top:4px;left:5px;font-family: "Font Awesome 5 Free";font-weight: 900;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:22px;color:#7d7d7d;outline:none !important}
+.rama-section .containerDesc .nav-stacked li.desc::before{content:"\f15c"}.rama-section .containerDesc .nav-stacked li .video::before{content:"\f03d"}
+.rama-section .containerDesc .nav-stacked li[aria-selected="true"]{background:#7a7a7a;color:#fff}.rama-section .containerDesc .nav-stacked li.active::before{color:#fff}
 .rama-section .containerDesc .imagelink{position:relative;display:block}.rama-section .containerDesc .imagelink span{-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;position:absolute;top:0;left:0;opacity:0;width:100%;height:100%;background:rgba(255,255,255,0.7) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTBDRUQ0RkI0QkI3MTFFNUJEMDlCMzU0MTNFNjlGNjQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTBDRUQ0RkE0QkI3MTFFNUJEMDlCMzU0MTNFNjlGNjQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk0ODY5RkRBMTEyRTExRTU5QTEwRjQxNTFGNzE3OTdBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk0ODY5RkRCMTEyRTExRTU5QTEwRjQxNTFGNzE3OTdBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0CjdvQAAAAZQTFRFHhwgHhwgUjj8dgAAAAF0Uk5TAEDm2GYAAAAtSURBVAjXY/jfwPifAUwcYGBgRicO//9/GEowABEzA1CYYgJsFMJkbPbCXQUAr9wr24qxNv8AAAAASUVORK5CYII=") no-repeat center}
 .rama-section .containerDesc .imagelink:hover span{opacity:1}
 .rama-section .containerDesc .img-thumbnail{max-width:100%}
