@@ -1,7 +1,7 @@
 <template>
 <div>
  
-  <ramnielesa />
+  <ramnielesacomponent />
 	
 	<div class="container select-type-lesov">
 		<div class="row">
