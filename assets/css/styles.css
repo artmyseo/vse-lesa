@@ -4584,6 +4584,7 @@ p{font-size:15px}
 .rama-section.homut-section .product-title{background:url("../img/footer_lodyas_blue.png") repeat}
 .rama-section.shtir-section .product-title{background:url("../img/footer_lodyas_green.png") repeat}
 .rama-section .containerDesc{position:relative;float:left;width:100%;padding:110px 0 40px 0;background:rgba(226,226,226,0.29);border-bottom:1px solid rgba(196,196,196,0.3)}
+.rama-section .containerDesc .nav-stacked {display: flex;}
 .rama-section .containerDesc .nav-stacked li{position:relative}
 .rama-section .containerDesc .nav-stacked li{position:relative;color:#7d7d7d;font-family:"Raleway";font-size:15px;padding-left:35px}
 .rama-section .containerDesc .nav-stacked li::before{position:absolute;top:4px;left:5px;font-family: "Font Awesome 5 Free";font-weight: 900;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:22px;color:#7d7d7d;outline:none !important}
