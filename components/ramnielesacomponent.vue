@@ -203,20 +203,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<ul class="nav nav-text nav-stacked" role="tablist">
-						<li class="active">
-							<a href="#rama-desc" class="desc" role="tab" data-toggle="tab">
-								Описание
-							</a>
-						</li>
-						<li>
-							<a href="#rama-video" class="video" role="tab" data-toggle="tab">
-								Видео
-							</a>
-						</li>
-					</ul>
 					<tabs class="nav nav-text nav-stacked">
-    					<tab title="Описание" class="desc">
+    					<tab title="Описание">
 							<p class="justifyfull">Рамные строительные леса отличаются высокой прочностью, простотой в эксплуатации, и, при этом, их стоимость намного ниже по сравнению с другими видами строительных лесов. Они предназначены для строительных и монтажных работ любой сложности; являются быстровозводимыми, с лежащими в основе пространственными каркасами из вертикальных рам, соединённых между собой горизонтальными и диагональными связями (которые в свою очередь соединяются между собой с помощью флажковых креплений). Высота установки данного вида лесов – до 100 м, количество ярусов настилов – не менее 3 штук, а нагрузка при фасадных работах – 200 кг/м&sup2; (при каменной кладке – 300 кг/м&sup2;). Диаметр трубы и толщина стенки зависит от вида рамных лесов.</p>
 							<div class="row">
 								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_1.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_1_s.jpg" alt="..."><span></span></a></div>
@@ -227,12 +215,12 @@
 								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_6.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_6_s.jpg" alt="..."><span></span></a></div>
 							</div>
 						</tab>
-						<tab title="Видео" class="video">
+						<tab title="Видео">
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-6 col-xs-12">
 									<iframe width="100%" height="315" src="https://www.youtube.com/embed/31Ue7G5Ffy4?rel=0" frameborder="0" allowfullscreen></iframe>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 col-xs-12">
 									<iframe width="100%" height="315" src="https://www.youtube.com/embed/wOEi_EoE0gY?rel=0" frameborder="0" allowfullscreen></iframe>
 								</div>
 							</div>

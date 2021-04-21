@@ -347,33 +347,10 @@
 	<div class="containerDesc">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
-						<ul class="nav nav-text nav-stacked" role="tablist">
-							<li class="active">
-								<a href="#klin-desc" class="desc" role="tab" data-toggle="tab">
-									Описание
-								</a>
-							</li>
-							<li>
-								<a href="#klin-video" class="video" role="tab" data-toggle="tab">
-									Видео
-								</a>
-							</li>
-						</ul>
-						<div class = "pull-left" style = "margin-top:20px">
-						<span>
-							<p style = "color:black;font-weight:bold;">При</p>
-							<p style = "color:black;font-weight:bold;">Покупке</p>
-							<p style = "color:black;font-weight:bold;">На сумму</p>
-							<p style = "color:black;font-weight:bold;">от 235 000 р.</p>
-						</span>
-						</div>
-						<div class="pull-right dimmed" id = "salePicKlin" style="margin-top: 20px;"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/sale.png" alt="Скидка" /></div>
-					</div>
-					<div class="col-md-9">
-						<!-- Tab panes -->
-						<div class="tab-content">
-							<div class="tab-pane active" id="klin-desc">
+					<div class="col-md-12">
+
+					<tabs class="nav nav-text nav-stacked">
+    					<tab title="Описание">
 								<p class="justifyfull">Строительные леса клинового типа являются надежными и универсальными, простыми в монтаже и демонтаже, что обеспечивает огромный спрос на них. Используются при ремонтно-строительных работах домов, в судостроении, при установке концертных площадок и сцен для шоу-программ. Что касается способа крепления, то клин забивают и расклинивают во фланцевый замок, который устроен таким образом, что самопроизвольное выпадение клина невозможно. Максимальная высота установки клиновых лесов варьируется от 60 до 100 м. Изготавливаются из труб диаметром 48 мм, при этом нагрузка при фасадных работах – 200 кг/м&sup2; (при каменной кладке – 500 кг/м&sup2;).</p>
 								<div class="row">
 									<div class="col-sm-2 col-xs-4"><a data-lightbox="klinovyelesa" class="imagelink" href="/assets/photo/klinovye-lesa/klinovye-lesa_1.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/klinovye-lesa/klinovye-lesa_1_s.jpg" alt="..."><span></span></a></div>
@@ -383,18 +360,28 @@
 									<div class="col-sm-2 col-xs-4"><a data-lightbox="klinovyelesa" class="imagelink" href="/assets/photo/klinovye-lesa/klinovye-lesa_5.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/klinovye-lesa/klinovye-lesa_5_s.jpg" alt="..."><span></span></a></div>
 									<div class="col-sm-2 col-xs-4"><a data-lightbox="klinovyelesa" class="imagelink" href="/assets/photo/klinovye-lesa/klinovye-lesa_6.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/klinovye-lesa/klinovye-lesa_6_s.jpg" alt="..."><span></span></a></div>
 								</div>
-							</div>
-							<div class="tab-pane" id="klin-video">
-								<div class="row">
-									<div class="col-md-6">
+						</tab>
+						<tab title="Видео">
+							<div class="row">
+								<div class="col-md-6 col-xs-12">
 										<iframe width="100%" height="315" src="https://www.youtube.com/embed/cuMiD0OeZcA?rel=0" frameborder="0" allowfullscreen></iframe>
 									</div>
-									<div class="col-md-6">
+								<div class="col-md-6 col-xs-12">
 										<iframe width="100%" height="315" src="https://www.youtube.com/embed/zzLM14bbz2k?rel=0" frameborder="0" allowfullscreen></iframe>
-									</div>
 								</div>
 							</div>
+						</tab>
+					</tabs>	
+
+						<div class = "pull-left" style = "margin-top:20px">
+						<span>
+							<p style = "color:black;font-weight:bold;">При</p>
+							<p style = "color:black;font-weight:bold;">Покупке</p>
+							<p style = "color:black;font-weight:bold;">На сумму</p>
+							<p style = "color:black;font-weight:bold;">от 235 000 р.</p>
+						</span>
 						</div>
+						<div class="pull-right dimmed" id = "salePicKlin" style="margin-top: 20px;"><img class="b-lazy" src="~/assets/img/sale.png" alt="Скидка" /></div>
 					</div>
 				</div>
 			</div>
