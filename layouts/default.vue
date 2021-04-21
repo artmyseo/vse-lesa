@@ -7,7 +7,7 @@
 					<div class="col-md-8 col-xs-12">
 						<a class="logo" href="/">
 							<img class="retina-hidden" src="~/assets/img/logo.png" alt="Комбинат Строительных Конструкций"><img
-								class="retina-show" src="/assets/img/logo-top@2x.png"
+								class="retina-show" src="~/assets/img/logo-top@2x.png"
 								alt="Комбинат Строительных Конструкций"></a>
 						<div class="desccomp">
 							<b>Завод строительных лесов:</b><br> производство, аренда и продажа металлоконструкций
@@ -103,10 +103,10 @@
 				<!-- Навигационное меню -->
 				<div id="navbarCollapse" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="rama"><a href="ramnye-lesa">Рамные леса</a></li>
-						<li class="klin"><a href="klinovye-lesa">Клиновые леса</a></li>
-						<li class="shtir"><a href="shtyrevye-lesa">Штыревые леса</a></li>
-						<li class="homut"><a href="homutovye-lesa">Хомутовые леса</a></li>
+						<li class="rama"><NuxtLink to="/ramnye-lesa">Рамные леса</NuxtLink></li>
+						<li class="klin"><NuxtLink to="/klinovye-lesa">Клиновые леса</NuxtLink></li>
+						<li class="shtir"><NuxtLink to="/shtyrevye-lesa">Штыревые леса</NuxtLink></li>
+						<li class="homut"><NuxtLink to="/homutovye-lesa">Хомутовые леса</NuxtLink></li>
 						<li class="tura"><a href="vyshki-tura.php">Вышки-тура</a></li>
 						<li><a class="comparison">Сравнить цены</a></li>
 						<li class="uslugi"><a href="arenda">Аренда</a></li>
