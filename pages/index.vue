@@ -313,5 +313,31 @@ mounted() {
 </script>
 
 <style>
+@keyframes topinfoanim {
+ from { display: none; margin-left: -700px;}
+ 50% { margin-left: -300px; }
+ to { margin-left: 0; }
+}
+
+@keyframes overlayanim {
+ from { top:0}
+ 85% { top:0}
+ to { top:-100%; }
+}
+
+.info-top .info .info-row:first-child{
+animation: topinfoanim 0.2s ease-in 1;
+}
+.info-top .info .info-row{
+animation: topinfoanim 0.5s ease-in 1;
+}
+.info-top .info .info-row:last-child{
+animation: topinfoanim 0.7s ease-in 1;
+}
+
+.line-lesa .lesa-block .overlay{
+ animation: overlayanim 3s ease-in 1;
+ animation-delay: 3s;
+}
 
 </style>
