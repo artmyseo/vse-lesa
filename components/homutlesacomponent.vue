@@ -206,19 +206,27 @@
 	<div class="containerDesc">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<ul class="nav nav-text nav-stacked" role="tablist">
-						<li class="active">
-							<a href="#homut-desc" class="desc" role="tab" data-toggle="tab">
-								Описание
-							</a>
-						</li>
-						<li>
-							<a href="#homut-video" class="video" role="tab" data-toggle="tab">
-								Видео
-							</a>
-						</li>
-					</ul>
+				<div class="col-md-12">
+					<tabs class="nav nav-text nav-stacked">
+    					<tab title="Описание">
+							<p class="justifyfull">Строительные леса хомутового типа используются при работах со сложными объектами, устанавливаются даже в самых труднодоступных местах. Например, используются для фасадных или высотных работ, реставрации памятников, храмов и т.д. Представляют собой трубчатые многоярусные и многосекционные металлоконструкции, все элементы которых соединяются поворотными и глухими хомутами. Высота данного вида лесов варьируется от 30 до 80 м, а нагрузка при фасадных работах – 200 кг/м&sup2; (при каменной кладке – от 300 до 500 кг/м&sup2; в зависимости от вида хомутовых лесов).</p>
+							<div class="row">
+								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_1.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_1_s.jpg" alt="..."><span></span></a></div>
+								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_2.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_2_s.jpg" alt="..."><span></span></a></div>
+								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_3.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_3_s.jpg" alt="..."><span></span></a></div>
+								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_4.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_4_s.jpg" alt="..."><span></span></a></div>
+								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_5.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_5_s.jpg" alt="..."><span></span></a></div>
+								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_6.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_6_s.jpg" alt="..."><span></span></a></div>
+							</div>
+						</tab>
+						<tab title="Видео">
+							<div class="row">
+								<div class="col-md-12">
+									<iframe width="100%" height="315" src="https://www.youtube.com/embed/2Op68fIEkS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+						</tab>
+					</tabs>	
 					<div class = "pull-left" style = "margin-top:20px">
 					<span>
 						<p style = "color:black;font-weight:bold;">При</p>
@@ -229,28 +237,7 @@
 					</div>
 					<div class="pull-right dimmed" id = "salePicKhomut" style="margin-top: 20px;"><img class="b-lazy" src="~/assets/img/sale.png" alt="Скидка"></div>
 				</div>
-				<div class="col-md-9">
-					<div class="tab-content">
-						<div class="tab-pane active" id="homut-desc">
-							<p class="justifyfull">Строительные леса хомутового типа используются при работах со сложными объектами, устанавливаются даже в самых труднодоступных местах. Например, используются для фасадных или высотных работ, реставрации памятников, храмов и т.д. Представляют собой трубчатые многоярусные и многосекционные металлоконструкции, все элементы которых соединяются поворотными и глухими хомутами. Высота данного вида лесов варьируется от 30 до 80 м, а нагрузка при фасадных работах – 200 кг/м&sup2; (при каменной кладке – от 300 до 500 кг/м&sup2; в зависимости от вида хомутовых лесов).</p>
-							<div class="row">
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_1.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_1_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_2.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_2_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_3.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_3_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_4.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_4_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_5.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_5_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_6.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_6_s.jpg" alt="..."><span></span></a></div>
-							</div>
-						</div>
-						<div class="tab-pane" id="homut-video">
-							<div class="row">
-								<div class="col-md-12">
-									<iframe width="100%" height="315" src="https://www.youtube.com/embed/M9lDVHyc8tU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
