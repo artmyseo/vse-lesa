@@ -18,7 +18,9 @@
     "jquery": "^3.6.0",
     "nuxt": "^2.15.3",
     "nuxt-fontawesome": "^0.4.0",
-    "vue-easy-lightbox": "^1.1.0",
+    "nuxt-gallery": "^2.0.0",
+    "vue-easy-lightbox": "^0.15.2",
+    "vue-silentbox": "^2.4.4",
     "vue-slim-tabs": "^0.4.0"
   },
   "devDependencies": {
