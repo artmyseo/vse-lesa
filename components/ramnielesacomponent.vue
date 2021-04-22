@@ -207,6 +207,8 @@
     					<tab title="Описание">
 							<p class="justifyfull">Рамные строительные леса отличаются высокой прочностью, простотой в эксплуатации, и, при этом, их стоимость намного ниже по сравнению с другими видами строительных лесов. Они предназначены для строительных и монтажных работ любой сложности; являются быстровозводимыми, с лежащими в основе пространственными каркасами из вертикальных рам, соединённых между собой горизонтальными и диагональными связями (которые в свою очередь соединяются между собой с помощью флажковых креплений). Высота установки данного вида лесов – до 100 м, количество ярусов настилов – не менее 3 штук, а нагрузка при фасадных работах – 200 кг/м&sup2; (при каменной кладке – 300 кг/м&sup2;). Диаметр трубы и толщина стенки зависит от вида рамных лесов.</p>
 							<div class="row">
+    							
+
 								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_1.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_1_s.jpg" alt="..."><span></span></a></div>
 								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_2.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_2_s.jpg" alt="..."><span></span></a></div>
 								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_3.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_3_s.jpg" alt="..."><span></span></a></div>
@@ -227,14 +229,9 @@
 						</tab>
 					</tabs>	
 
-					<div class = "pull-left" style = "margin-top:20px">
-						<span>
-							<p style = "color:black;font-weight:bold;">При</p>
-							<p style = "color:black;font-weight:bold;">Покупке</p>
-							<p style = "color:black;font-weight:bold;">На сумму</p>
-							<p style = "color:black;font-weight:bold;">от 235 000 р.</p>
-						</span>
-						</div>
+					<div class="discountblock">
+						<span>При покупке на сумму от 235 000 р.</span>
+					</div>
 					<div class="pull-right dimmed" id = "salePic" style="margin-top: 20px;"><img class="b-lazy image" src="~/assets/img/sale.png" alt="Скидка"></div>
 				</div>
 
@@ -682,12 +679,15 @@
 
 <script>
 import { Tabs, Tab } from 'vue-slim-tabs'
+  import Gallery from 'nuxt-gallery/src/Gallery.vue'
+  import GalleryImage from 'nuxt-gallery/src/GalleryImage.vue'
 
 export default {
 
 components: {
-    Tabs, Tab
+    Tabs, Tab, Gallery, GalleryImage
 },
+    
   }
 </script>
 
