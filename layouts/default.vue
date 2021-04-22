@@ -129,29 +129,43 @@
 	<section class="line-lesa">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 col-xs-6 lesa-block lb-rama fastlink" data-linkto=".rama-section">
+				<div class="col-md-2 col-xs-6 lesa-block lb-rama fastlink">
+          <NuxtLink to="/ramnye-lesa">
 					<div class="title">Рамные<br> леса</div>
 					<div class="icon icon-rama"></div>
+          <div class="overlay"></div>
+          </NuxtLink>
 				</div>
-				<div class="col-md-2 col-xs-6 lesa-block lb-klin fastlink" data-linkto=".klin-section">
+				<div class="col-md-2 col-xs-6 lesa-block lb-klin fastlink">
+          <NuxtLink to="/klinovye-lesa">
 					<div class="title">Клиновые<br> леса</div>
 					<div class="icon icon-klin"></div>
+          <div class="overlay"></div>
+          </NuxtLink>
 				</div>
-				<div class="col-md-2 col-xs-6 lesa-block lb-shtir fastlink" data-linkto=".shtir-section">
+				<div class="col-md-2 col-xs-6 lesa-block lb-shtir fastlink">
+          <NuxtLink to="/shtyrevye-lesa">
 					<div class="title">Штыревые<br> леса</div>
 					<div class="icon icon-shtir"></div>
+          <div class="overlay"></div>
+          </NuxtLink>
 				</div>
-				<div class="col-md-2 col-xs-6 lesa-block lb-homut fastlink" data-linkto=".homut-section">
+				<div class="col-md-2 col-xs-6 lesa-block lb-homut fastlink">
+          <NuxtLink to="/homutovye-lesa">
 					<div class="title">Хомутовые<br> леса</div>
 					<div class="icon icon-homut"></div>
+          <div class="overlay"></div>
+          </NuxtLink>
 				</div>
-				<div class="col-md-2 col-xs-6 lesa-block lb-vyshki fastlink" data-linkto=".tura-section">
+				<div class="col-md-2 col-xs-6 lesa-block lb-vyshki fastlink">
 					<div class="title">Вышки <br> тура</div>
 					<div class="icon icon-vyshki"></div>
+          <div class="overlay"></div>
 				</div>
-				<div class="col-md-2 col-xs-6 lesa-block lb-elements fastlink"  id='homuty' data-linkto=".elements-section">
+				<div class="col-md-2 col-xs-6 lesa-block lb-elements fastlink"  id='homuty'>
 					<div class="title">Элементы<br> лесов</div>
 					<div class="icon icon-element"></div>
+          <div class="overlay"></div>
 				</div>
 			</div>
 		</div>
