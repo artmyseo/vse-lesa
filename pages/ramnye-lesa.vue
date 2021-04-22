@@ -10726,5 +10726,8 @@ mounted() {
 </script>
 
 <style>
-
+.line-lesa .lesa-block .nuxt-link-active .overlay{
+ top: 0;
+ background: rgba(0,0,0,0.3);
+}
 </style>
