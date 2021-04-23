@@ -610,38 +610,6 @@ p {
 	border-bottom: 5px solid #0d545d;
 }
 
-.line-lesa .lesa-block .overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: -100%;
-	left: 0;
-	z-index: 2;
-	background: rgba(0, 0, 0, 0.5);
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
-}
-
-.line-lesa .lesa-block .overlay::before {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	content: "\f103";
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 40px;
-	color: #fff;
-	margin-top: -10px;
-	margin-left: -12px;
-	animation: timing .3s infinite alternate;
-}
-
 .line-lesa .lesa-block:hover .overlay {
 	top: 0;
 }
@@ -1881,6 +1849,24 @@ p {
 	text-align: center;
 	line-height: 1.8;
 	border-radius: 20px;
+}
+
+.discountblock{
+	width: 100%;
+	background: url(~/assets/img/footer_lodyas_orange.png) repeat;
+	margin-top: 45px;
+	text-transform: uppercase;
+    font-family: 'Raleway';
+    font-size: 24px;
+	padding: 12px 0 12px 50px;
+}
+
+.discountimage{
+	float: right;
+	background: url(~/assets/img/salediscount.png) no-repeat;
+	width: 170px;
+	height: 60px;
+	margin: -14px -15px 0 0;
 }
 
 #description .imageElemsTab .pointsTab div.active,
@@ -4412,7 +4398,7 @@ p{font-size:15px}
 .line-lesa .lesa-block.lb-homut{border-bottom:5px solid #43acff}
 .line-lesa .lesa-block.lb-shtir{border-bottom:5px solid #0d545d}
 .line-lesa .lesa-block .overlay{position:absolute;width:100%;height:100%;top:-100%;left:0;z-index:2;background:rgba(0,0,0,0.5);-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;cursor:pointer}
-.line-lesa .lesa-block .overlay::before{position:absolute;top:50%;left:50%;content:"\f103";font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:40px;color:#fff;margin-top:-10px;margin-left:-12px;animation:timing .3s infinite alternate}
+.line-lesa .lesa-block .overlay::before{position:absolute;top:50%;left:50%;content:"\f103";	font-family: "Font Awesome 5 Free";font-weight: 600;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:40px;color:#fff;margin-top:-10px;margin-left:-12px;animation:timing .3s infinite alternate}
 .line-lesa .lesa-block:hover .overlay{top:0}.about-block{position:relative;float:left;width:100%;padding:40px 0;background:url("../img/crossword.png") repeat}
 .about-block .title-block{float:left;width:100%;text-align:center;margin-bottom:30px}
 .about-block .title-block h2{width:100%;text-transform:uppercase;font-family:'Roboto'}
@@ -4766,15 +4752,19 @@ p{font-size:15px}
 .homut-section .product .right .bot-cont .priceCont .price i{color:#686464;font-size:21px}
 .homut-section .product .right .bot-cont .priceCont .help{position:absolute;right:10px;top:17px;width:20px;height:20px;line-height:20px;background:#1b273d;color:#37a0f3;font-family:"museo_sans_cyrillic300";font-size:19px;text-align:center;cursor:pointer}
 .homut-section .product .right .bot-cont .getProduct{position:absolute;text-align:center;width:100%;height:40px;bottom:0;background:#ff7a47;color:#fff;text-transform:uppercase;font-size:20px;cursor:pointer;font-family:"museo_sans_cyrillic700";-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.homut-section .product .right .bot-cont .getProduct:hover{background:#fd3939}.homut-section .product .right .bot-cont .getProduct span{display:inline-block;height:40px;line-height:40px;padding-left:32px;/*background:url('img/icons/cart.svg') no-repeat left center*/}.homut-section .product .productbottom{position:relative;float:left;width:100%;border:4px solid #37a0f3;border-top:2px solid #37a0f3;min-height:40px;overflow:hidden}.homut-section .product .productbottom .prices{float:left;width:100%}.homut-section .product .productbottom .prices .price{float:left;position:relative;width:100%}.homut-section .product .productbottom .prices .price::before{content:" ";position:absolute;width:100px;height:1px;background:#d0d0d0;bottom:0;left:0}.homut-section .product .productbottom .prices .price:last-child::before{content:none}.homut-section .product .productbottom .prices .title-price{float:left;width:100%;font-size:13px;margin:5px 0 5px 0;text-transform:uppercase;color:#a0a0a0;font-family:'proxima_nova_rgbold'}.homut-section .product .productbottom .prices .value{float:left;position:relative;width:100%;font-size:25px;margin-bottom:5px;line-height:1;font-family:'museo_sans_cyrillic500'}.homut-section .product .productbottom .productbuttons{position:relative;text-align:center;margin-top:10px;margin-bottom:9px}.homut-section .product .productbottom .productbuttons::before{content:" ";position:absolute;width:4px;height:300px;background:#37a0f3;left:0;top:0;margin-top:-100px;margin-left:-35px;-webkit-transform:rotate(30deg);-moz-transform:rotate(30deg);-ms-transform:rotate(30deg);-o-transform:rotate(30deg)}.homut-section.rama-section .product-title{background:url("../img/footer_lodyas_orange.png") repeat}.homut-section.klin-section .product-title{background:url("../img/footer_lodyas_red.png") repeat}.homut-section.homut-section .product-title{background:url("../img/footer_lodyas_blue.png") repeat}
-.homut-section.shtir-section .product-title{background:url("../img/footer_lodyas_green.png") repeat}
+.homut-section .shtir-section .product-title{background:url("../img/footer_lodyas_blue.png") repeat}
 .homut-section .containerDesc{position:relative;float:left;width:100%;padding:110px 0 40px 0;background:rgba(226,226,226,0.29);border-bottom:1px solid rgba(196,196,196,0.3)}
+
+
+.homut-section .containerDesc .nav-stacked {display: flex;}
+.homut-section .containerDesc .nav-stacked .vue-tabpanel {width: 100%; border: 3px solid #37a0f3; background: #fff; padding: 20px 15px 20px 20px; box-shadow:10px 10px 38px -19px rgb(0 0 0 / 75%);}
 .homut-section .containerDesc .nav-stacked li{position:relative}
-.homut-section .containerDesc .nav-stacked li a{position:relative;color:#7d7d7d;font-family:"Raleway";font-size:15px;padding-left:35px}
-.homut-section .containerDesc .nav-stacked li a::before{position:absolute;top:4px;left:5px;font-family: "Font Awesome 5 Free";font-weight: 900;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:22px;color:#7d7d7d;outline:none !important}
-.homut-section .containerDesc .nav-stacked li a.desc::before{content:"\f15c"}
-.homut-section .containerDesc .nav-stacked li a.video::before{content:"\f03d"}
-.homut-section .containerDesc .nav-stacked li.active a{background:#7a7a7a;color:#fff}
-.homut-section .containerDesc .nav-stacked li.active a::before{color:#fff}
+.homut-section .containerDesc .nav-stacked li{position:relative;color:#7d7d7d;font-family:"Raleway";font-size:15px;padding:10px 15px 10px 35px; }
+.homut-section .containerDesc .nav-stacked li::before{position:absolute;top:4px;left:5px;font-family: "Font Awesome 5 Free";font-weight: 900;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:22px;color:#7d7d7d;outline:none !important}
+.homut-section .containerDesc .nav-stacked li:first-child::before{content:"\f15c"}.homut-section .containerDesc .nav-stacked li::before{content:"\f03d"}
+.homut-section .containerDesc .nav-stacked ul{list-style-type: none;}
+.homut-section .containerDesc .nav-stacked li[aria-selected="true"]{color:#fff;background: url(~/assets/img/footer_lodyas_blue.png) repeat;}.homut-section .containerDesc .nav-stacked li[aria-selected="true"]::before{color:#fff}
+
 .homut-section .containerDesc .imagelink{position:relative;display:block}
 .homut-section .containerDesc .imagelink span{-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;position:absolute;top:0;left:0;opacity:0;width:100%;height:100%;background:rgba(255,255,255,0.7) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTBDRUQ0RkI0QkI3MTFFNUJEMDlCMzU0MTNFNjlGNjQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTBDRUQ0RkE0QkI3MTFFNUJEMDlCMzU0MTNFNjlGNjQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk0ODY5RkRBMTEyRTExRTU5QTEwRjQxNTFGNzE3OTdBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk0ODY5RkRCMTEyRTExRTU5QTEwRjQxNTFGNzE3OTdBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0CjdvQAAAAZQTFRFHhwgHhwgUjj8dgAAAAF0Uk5TAEDm2GYAAAAtSURBVAjXY/jfwPifAUwcYGBgRicO//9/GEowABEzA1CYYgJsFMJkbPbCXQUAr9wr24qxNv8AAAAASUVORK5CYII=") no-repeat center}
 .homut-section .containerDesc .imagelink:hover span{opacity:1}
@@ -4865,12 +4855,16 @@ p{font-size:15px}
 .shtir-section.homut-section .product-title{background:url("../img/footer_lodyas_blue.png") repeat}
 .shtir-section.shtir-section .product-title{background:url("../img/footer_lodyas_green.png") repeat}
 .shtir-section .containerDesc{position:relative;float:left;width:100%;padding:110px 0 40px 0;background:rgba(226,226,226,0.29);border-bottom:1px solid rgba(196,196,196,0.3)}
+
+.shtir-section .containerDesc .nav-stacked {display: flex;}
+.shtir-section .containerDesc .nav-stacked .vue-tabpanel {width: 100%; border: 3px solid #0d545d; background: #fff; padding: 20px 15px 20px 20px; box-shadow:10px 10px 38px -19px rgb(0 0 0 / 75%);}
 .shtir-section .containerDesc .nav-stacked li{position:relative}
-.shtir-section .containerDesc .nav-stacked li a{position:relative;color:#7d7d7d;font-family:"Raleway";font-size:15px;padding-left:35px}
-.shtir-section .containerDesc .nav-stacked li a::before{position:absolute;top:4px;left:5px;font-family: "Font Awesome 5 Free";font-weight: 900;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:22px;color:#7d7d7d;outline:none !important}
-.shtir-section .containerDesc .nav-stacked li a.desc::before{content:"\f15c"}.shtir-section .containerDesc .nav-stacked li a.video::before{content:"\f03d"}
-.shtir-section .containerDesc .nav-stacked li.active a{background:#7a7a7a;color:#fff}
-.shtir-section .containerDesc .nav-stacked li.active a::before{color:#fff}
+.shtir-section .containerDesc .nav-stacked li{position:relative;color:#7d7d7d;font-family:"Raleway";font-size:15px;padding:10px 15px 10px 35px; }
+.shtir-section .containerDesc .nav-stacked li::before{position:absolute;top:4px;left:5px;font-family: "Font Awesome 5 Free";font-weight: 900;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:22px;color:#7d7d7d;outline:none !important}
+.shtir-section .containerDesc .nav-stacked li:first-child::before{content:"\f15c"}.shtir-section .containerDesc .nav-stacked li::before{content:"\f03d"}
+.shtir-section .containerDesc .nav-stacked ul{list-style-type: none;}
+.shtir-section .containerDesc .nav-stacked li[aria-selected="true"]{color:#fff;background: url(~/assets/img/footer_lodyas_green.png) repeat;}.shtir-section .containerDesc .nav-stacked li[aria-selected="true"]::before{color:#fff}
+
 .shtir-section .containerDesc .imagelink{position:relative;display:block}
 .shtir-section .containerDesc .imagelink span{-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;position:absolute;top:0;left:0;opacity:0;width:100%;height:100%;background:rgba(255,255,255,0.7) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTBDRUQ0RkI0QkI3MTFFNUJEMDlCMzU0MTNFNjlGNjQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTBDRUQ0RkE0QkI3MTFFNUJEMDlCMzU0MTNFNjlGNjQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk0ODY5RkRBMTEyRTExRTU5QTEwRjQxNTFGNzE3OTdBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk0ODY5RkRCMTEyRTExRTU5QTEwRjQxNTFGNzE3OTdBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0CjdvQAAAAZQTFRFHhwgHhwgUjj8dgAAAAF0Uk5TAEDm2GYAAAAtSURBVAjXY/jfwPifAUwcYGBgRicO//9/GEowABEzA1CYYgJsFMJkbPbCXQUAr9wr24qxNv8AAAAASUVORK5CYII=") no-repeat center}
 .shtir-section .containerDesc .imagelink:hover span{opacity:1}
