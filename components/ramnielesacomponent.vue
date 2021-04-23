@@ -229,10 +229,11 @@
 						</tab>
 					</tabs>	
 
-					<div class="discountblock">
-						<span>При покупке на сумму от 235 000 р.</span>
+					<div class="discountblock" :class="{inview: checkView(0)}">
+						<span>При покупке на сумму от <strong>235 000</strong> <i class="fas fa-ruble-sign"></i></span>
+						<div class="discountimage"></div>
 					</div>
-					<div class="pull-right dimmed" id = "salePic" style="margin-top: 20px;"><img class="b-lazy image" src="~/assets/img/sale.png" alt="Скидка"></div>
+					
 				</div>
 
 			</div>
@@ -679,15 +680,62 @@
 
 <script>
 import { Tabs, Tab } from 'vue-slim-tabs'
-  import Gallery from 'nuxt-gallery/src/Gallery.vue'
-  import GalleryImage from 'nuxt-gallery/src/GalleryImage.vue'
 
 export default {
 
 components: {
-    Tabs, Tab, Gallery, GalleryImage
+    Tabs, Tab
 },
+
     
+data() {
+   return{
+    scrollTop: '',
+    scrollBottom: '',
+    animate: '',
+	max: 235000,
+	val: 234800,
+   };
+},
+  methods: {
+    checkView(e){
+      if(this.animate){
+    //    let element = this.animate[e];
+    //    let elTop = element.offsetTop;
+    //    let elBottom = element.offsetTop + element.scrollHeight;
+	
+    if(this.scrollBottom > 1800){
+          return true;
+       } else {
+          return false;
+    	}
+      }
+    },
+    scrollHandler(){
+      this.scrollBottom = window.scrollY + window.innerHeight;
+      this.scrollTop = window.scrollY;
+    }
+  },
+  mounted(){
+    this.scrollTop = window.scrollY;
+    this.scrollBottom = window.scrollY + window.innerHeight;
+    window.addEventListener('scroll', _.throttle(this.scrollHandler, 300))
+    this.animate = document.querySelectorAll(".discountblock")
+  }
+
+
   }
 </script>
+
+<style scoped>
+
+.discountblock{
+	opacity: 0.1;	
+}
+
+.inview{
+	opacity: 1;
+	transition: 1s;
+}
+</style>
 

@@ -194,15 +194,12 @@
 							</div>
 						</tab>
 					</tabs>	
-					<div class = "pull-left" style = "margin-top:20px">
-					<span>
-						<p style = "color:black;font-weight:bold;">При</p>
-    					<p style = "color:black;font-weight:bold;">Покупке</p>
-    					<p style = "color:black;font-weight:bold;">На сумму</p>
-    					<p style = "color:black;font-weight:bold;">от 235 000 р.</p>
-					</span>
+					
+					<div class="discountblock">
+						<span>При покупке на сумму от <strong>235 000</strong> <i class="fas fa-ruble-sign"></i></span>
+						<div class="discountimage"></div>
 					</div>
-					<div class="pull-right dimmed" id = "salePicShtir" style="margin-top: 20px;"><img class="b-lazy" src="~/assets/img/sale.png" alt="Скидка"></div>
+
 				</div>
 				
 			</div>

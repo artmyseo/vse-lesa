@@ -325,6 +325,12 @@ mounted() {
  to { top:-100%; }
 }
 
+@keyframes discountanim {
+ from { display: none; margin-left: -700px;}
+ 50% { margin-left: -300px; }
+ to { margin-left: 0; }
+}
+
 .info-top .info .info-row:first-child{
 animation: topinfoanim 0.2s ease-in 1;
 }
@@ -338,6 +344,10 @@ animation: topinfoanim 0.7s ease-in 1;
 .line-lesa .lesa-block .overlay{
  animation: overlayanim 3s ease-in 1;
  animation-delay: 3s;
+}
+
+.discountblock{
+animation: discountanim 0.7s ease-in 1;
 }
 
 </style>
