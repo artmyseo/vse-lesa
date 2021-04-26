@@ -11196,6 +11196,20 @@
 
 <script>
 export default {
+ head() {
+  return {
+    title: 'Клиновые леса от производителя ООО "ПК МДН-Пром"',
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: 'Строительные леса клинового типа являются надежными и универсальными, простыми в монтаже и демонтаже, что обеспечивает огромный спрос на них.'
+      }
+    ]
+  }
+  },
 mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
