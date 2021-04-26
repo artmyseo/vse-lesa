@@ -10716,6 +10716,18 @@
 
 <script>
 export default {
+  head: {
+    title: 'Рамные леса от производителя  ООО "ПК МДН-Пром"',
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: 'Заказать рамные строительные леса в компании ООО "ПК МДН-Пром", которые отличаются высокой прочностью, простотой в эксплуатации, и, при этом, их стоимость намного ниже по сравнению с другими видами строительных лесов.'
+      }
+    ]
+  },
 mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
