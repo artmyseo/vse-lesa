@@ -1,4 +1,5 @@
 <template>
+<div>
     <section class="lesa-section homut-section" id="homut-section">
 	<div class="topbar topbarhomut">
 		<div class="container">
@@ -297,17 +298,17 @@
 							</div>
 						</div>
 						
-						<form method="POST" target="formwindow">
+						
 							<div class="col-sm-6 productbuttons">
 								<div class="btn-group " role="group">
 									<button type="button" class="btn btn-black-custom report">Комплектация</button>
 									<button type="button" class="btn btn-black-custom save">Сохранить</button>
 								</div>
-								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa'> Оформить заказ</button>
+								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa' @click="showModal = true"> Оформить заказ</button>
 							</div>
 							<input type="hidden" name="datas">
 							<input type="hidden" name="datajson">
-						</form>
+						
 					</div>
 					
 				</div>
@@ -369,17 +370,17 @@
 							</div>
 						</div>
 						
-						<form method="POST" target="formwindow">
+						
 							<div class="col-sm-6 productbuttons">
 								<div class="btn-group " role="group">
 									<button type="button" class="btn btn-black-custom report">Комплектация</button>
 									<button type="button" class="btn btn-black-custom save">Сохранить</button>
 								</div>
-								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa'> Оформить заказ</button>
+								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa' @click="showModal = true"> Оформить заказ</button>
 							</div>
 							<input type="hidden" name="datas">
 							<input type="hidden" name="datajson">
-						</form>
+						
 					</div>
 					
 				</div>
@@ -441,17 +442,17 @@
 								</div>
 							</div>
 						</div>
-						<form method="POST" target="formwindow">
+						
 							<div class="col-sm-6 productbuttons">
 								<div class="btn-group " role="group">
 									<button type="button" class="btn btn-black-custom report">Комплектация</button>
 									<button type="button" class="btn btn-black-custom save">Сохранить</button>
 								</div>
-								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa'> Оформить заказ</button>
+								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa' @click="showModal = true"> Оформить заказ</button>
 							</div>
 							<input type="hidden" name="datas">
 							<input type="hidden" name="datajson">
-						</form>
+						
 					</div>
 					
 				</div>
@@ -512,17 +513,17 @@
 							</div>
 						</div>
 						
-						<form method="POST" target="formwindow">
+						
 							<div class="col-sm-6 productbuttons">
 								<div class="btn-group " role="group">
 									<button type="button" class="btn btn-black-custom report">Комплектация</button>
 									<button type="button" class="btn btn-black-custom save">Сохранить</button>
 								</div>
-								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa'> Оформить заказ</button>
+								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa' @click="showModal = true"> Оформить заказ</button>
 							</div>
 							<input type="hidden" name="datas">
 							<input type="hidden" name="datajson">
-						</form>
+						
 					</div>
 					
 				</div>
@@ -585,17 +586,17 @@
 							</div>
 						</div>
 						
-						<form method="POST" target="formwindow">
+						
 							<div class="col-sm-6 productbuttons">
 								<div class="btn-group " role="group">
 									<button type="button" class="btn btn-black-custom report">Комплектация</button>
 									<button type="button" class="btn btn-black-custom save">Сохранить</button>
 								</div>
-								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa'> Оформить заказ</button>
+								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa' @click="showModal = true"> Оформить заказ</button>
 							</div>
 							<input type="hidden" name="datas">
 							<input type="hidden" name="datajson">
-						</form>
+						
 					</div>
 					
 				</div>
@@ -657,17 +658,17 @@
 							</div>
 						</div>
 						
-						<form method="POST" target="formwindow">
+						
 							<div class="col-sm-6 productbuttons">
 								<div class="btn-group " role="group">
 									<button type="button" class="btn btn-black-custom report">Комплектация</button>
 									<button type="button" class="btn btn-black-custom save">Сохранить</button>
 								</div>
-								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa'> Оформить заказ</button>
+								<button class="btn btn-danger-fill-custom cart getorderform" data-typeProd='lesa' @click="showModal = true"> Оформить заказ</button>
 							</div>
 							<input type="hidden" name="datas">
 							<input type="hidden" name="datajson">
-						</form>
+						
 					</div>
 					
 				</div>
@@ -675,16 +676,70 @@
 		</div>
 	</div>
 </section>
+
+<div class="modal-vue">
+	  <!-- button show -->
+  
+  <!-- overlay -->
+  <div class="overlay" v-if="showModal" @click="showModal = false"></div>
+  
+  <!-- modal -->
+  <div class="modalty" v-if="showModal">
+    <button class="close" @click="showModal = false">x</button>
+	<appform />
+  </div>
+</div>
+</div>
 </template>
 
 <script>
 import { Tabs, Tab } from 'vue-slim-tabs'
+import appform from '~/components/appform'
 
 export default {
 
 components: {
-    Tabs, Tab
+    Tabs, Tab, appform
 },
-  }
+data() {
+   return{
+	showModal: false
+   };
+ },
+}
 </script>
 
+<style scoped>
+.modal-vue  {
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}	
+
+.modal-vue .overlay {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-vue .modalty {
+  position: fixed;
+  width: 600px;
+  z-index: 9999;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+ padding: 20px 30px;
+ background-color: #fff;
+}
+
+.modal-vue .close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+</style>
