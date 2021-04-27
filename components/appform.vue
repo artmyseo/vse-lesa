@@ -1,8 +1,6 @@
 <template>
 
 <!-- app -->
-
-
 			<form class="orderForm">
 				<div class="modal-header">
 					<h4 class="modal-title">Оформление заказа</h4>
@@ -97,7 +95,39 @@
 				</div>
 			</form>
 
-
-
-
 </template>
+
+<style scoped>
+.modal-vue  {
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}	
+
+.modal-vue .overlay {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-vue .modalty {
+  position: fixed;
+  width: 600px;
+  z-index: 9999;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+ padding: 20px 30px;
+ background-color: #fff;
+}
+
+.modal-vue .close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+</style>
