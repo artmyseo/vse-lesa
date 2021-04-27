@@ -726,7 +726,7 @@ data() {
     //    let elTop = element.offsetTop;
     //    let elBottom = element.offsetTop + element.scrollHeight;
 	
-    if(this.scrollBottom > 1800){
+    if(this.scrollBottom > 1000){
           return true;
        } else {
           return false;
@@ -757,7 +757,7 @@ data() {
 
 .inview{
 	opacity: 1;
-	transition: 1s;
+	transition: 1.5s;
 }
 
 .modal-vue  {
