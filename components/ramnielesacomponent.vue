@@ -1,4 +1,6 @@
 <template>
+
+<div>
     	<section class="lesa-section rama-section" id="rama-section">
 	<div class="topbar topbarrama">
 		<div class="container">
@@ -367,7 +369,7 @@
 								</div>
 							</div>
 						</div>
-						<form method="POST" target="formwindow">
+						
 							<div class="col-sm-6 productbuttons">
 								<div class="btn-group " role="group">
 									<button type="button" class="btn btn-black-custom report">Комплектация</button>
@@ -377,7 +379,7 @@
 							</div>
 							<input type="hidden" name="datas">
 							<input type="hidden" name="datajson">
-						</form>
+						
 					</div>
 	
 				</div>
@@ -675,9 +677,12 @@
 			</div>
 		</div>
 	</div>
+
+</section>
+
+
 <div class="modal-vue">
 	  <!-- button show -->
-  <button @click="showModal = true">show</button>
   
   <!-- overlay -->
   <div class="overlay" v-if="showModal" @click="showModal = false"></div>
@@ -688,9 +693,8 @@
 	<appform />
   </div>
 </div>
-</section>
 
-
+</div>
 
 </template>
 
@@ -756,6 +760,12 @@ data() {
 	transition: 1s;
 }
 
+.modal-vue  {
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}	
+
 .modal-vue .overlay {
   position: fixed;
   z-index: 9998;
@@ -767,12 +777,14 @@ data() {
 }
 
 .modal-vue .modalty {
-  position: relative;
+  position: fixed;
   width: 600px;
   z-index: 9999;
-  margin: 0 auto;
-  padding: 20px 30px;
-  background-color: #fff;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+ padding: 20px 30px;
+ background-color: #fff;
 }
 
 .modal-vue .close{
