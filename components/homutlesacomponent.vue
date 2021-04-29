@@ -212,12 +212,25 @@
     					<tab title="Описание">
 							<p class="justifyfull">Строительные леса хомутового типа используются при работах со сложными объектами, устанавливаются даже в самых труднодоступных местах. Например, используются для фасадных или высотных работ, реставрации памятников, храмов и т.д. Представляют собой трубчатые многоярусные и многосекционные металлоконструкции, все элементы которых соединяются поворотными и глухими хомутами. Высота данного вида лесов варьируется от 30 до 80 м, а нагрузка при фасадных работах – 200 кг/м&sup2; (при каменной кладке – от 300 до 500 кг/м&sup2; в зависимости от вида хомутовых лесов).</p>
 							<div class="row">
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_1.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_1_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_2.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_2_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_3.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_3_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_4.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_4_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_5.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_5_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="homutovyelesa" class="imagelink" href="/photo/homutovye-lesa/homutovye-lesa_6.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/homutovye-lesa/homutovye-lesa_6_s.jpg" alt="..."><span></span></a></div>
+							
+		<div
+          v-for="(gorsel, gorselIndex) in gorseller"
+          :key="gorselIndex"
+          class="col-sm-2 col-xs-4"
+          @click="index = gorselIndex"
+        >
+		  <div class="imagelink">
+          	<img width="132" height="100" :src="gorsel.thumb" class="img-thumbnail" />
+		  	<span></span>
+		  </div>
+        </div>
+        <LightGallery
+          :images="gorseller"
+          :index="index"
+          :disable-scroll="false"
+          @close="index = null"
+        />
+							
 							</div>
 						</tab>
 						<tab title="Видео">
@@ -703,7 +716,16 @@ components: {
 },
 data() {
    return{
-	showModal: false
+	showModal: false,
+	gorseller: [
+      	{ title: "Штыревые леса", url: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_1.jpg", thumb: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_1_s.jpg"},
+    	{ title: "Штыревые леса", url: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_2.jpg", thumb: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_2_s.jpg"},
+	    { title: "Штыревые леса", url: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_3.jpg", thumb: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_3_s.jpg"},
+	    { title: "Штыревые леса", url: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_4.jpg", thumb: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_4_s.jpg"},
+	    { title: "Штыревые леса", url: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_5.jpg", thumb: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_5_s.jpg"},
+	    { title: "Штыревые леса", url: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_6.jpg", thumb: "https://все-леса.рф/photo/homutovye-lesa/homutovye-lesa_6_s.jpg"}	  	  	     
+    ],
+    index: null,
    };
  },
 }

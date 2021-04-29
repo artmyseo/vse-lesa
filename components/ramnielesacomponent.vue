@@ -211,12 +211,27 @@
 							<div class="row">
     							
 
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_1.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_1_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_2.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_2_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_3.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_3_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_4.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_4_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_5.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_5_s.jpg" alt="..."><span></span></a></div>
-								<div class="col-sm-2 col-xs-4"><a data-lightbox="ramnyelesa" class="imagelink" href="/photo/ramnye-lesa/ramnye-lesa_6.jpg"><img class="b-lazy img-thumbnail" src="~/assets/photo/ramnye-lesa/ramnye-lesa_6_s.jpg" alt="..."><span></span></a></div>
+								
+	
+        <div
+          v-for="(gorsel, gorselIndex) in gorseller"
+          :key="gorselIndex"
+          class="col-sm-2 col-xs-4"
+          @click="index = gorselIndex"
+        >
+		  <div class="imagelink">
+          	<img width="132" height="100" :src="gorsel.thumb" class="img-thumbnail" />
+		  	<span></span>
+		  </div>
+        </div>
+        <LightGallery
+          :images="gorseller"
+          :index="index"
+          :disable-scroll="false"
+          @close="index = null"
+        />
+    
+							
 							</div>
 						</tab>
 						<tab title="Видео">
@@ -682,7 +697,7 @@
 
 
 <div class="modal-vue">
-	  <!-- button show -->
+	<!-- button show -->
   
   <!-- overlay -->
   <div class="overlay" v-if="showModal" @click="showModal = false"></div>
@@ -702,6 +717,7 @@
 import { Tabs, Tab } from 'vue-slim-tabs'
 import appform from '~/components/appform'
 
+
 export default {
 
 components: {
@@ -716,7 +732,16 @@ data() {
     animate: '',
 	max: 235000,
 	val: 234800,
-	showModal: false
+	showModal: false,
+	gorseller: [
+      	{ title: "Рамные леса", url: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_1.jpg", thumb: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_1_s.jpg"},
+    	{ title: "Рамные леса", url: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_2.jpg", thumb: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_2_s.jpg"},
+	    { title: "Рамные леса", url: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_3.jpg", thumb: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_3_s.jpg"},
+	    { title: "Рамные леса", url: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_4.jpg", thumb: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_4_s.jpg"},
+	    { title: "Рамные леса", url: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_5.jpg", thumb: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_5_s.jpg"},
+	    { title: "Рамные леса", url: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_6.jpg", thumb: "https://все-леса.рф/photo/ramnye-lesa/ramnye-lesa_6_s.jpg"}	  	  	     
+    ],
+    index: null,
    };
 },
   methods: {
