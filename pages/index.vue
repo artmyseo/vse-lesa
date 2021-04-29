@@ -298,6 +298,19 @@ import { Tabs, Tab } from 'vue-slim-tabs'
 
 export default {
 
+head: {
+    title: 'Cтроительные леса от компании-производителя | ООО "ПК МДН-Пром"',
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: 'Cтроительные леса от компании ООО "ПК МДН-Пром" отличаются высоким качеством при низкой стоимости.'
+      }
+    ]
+},
+
 components: {
     Tabs, Tab
 },
